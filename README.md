@@ -124,20 +124,20 @@ Top important features include:
 ```text
 .
 |-- meituan_late_prediction.py
-|-- meituan_late_prediction_notebook.ipynb
 |-- requirements.txt
 |-- README.md
-|-- outputs/
-|   |-- model_metrics.csv
-|   |-- summary_metrics.csv
-|   |-- feature_importance_top15.csv
-|   `-- classification reports
-`-- figures/
-    |-- late rate analysis figures
-    |-- confusion matrix
-    |-- ROC curve
-    `-- feature importance plot
+|-- .gitignore
+`-- outputs/
+    |-- model_metrics.csv
+    |-- summary_metrics.csv
+    |-- feature_importance_top15.csv
+    |-- late_rate_by_hour.csv
+    |-- late_rate_by_dispatch_wait_bin.csv
+    |-- late_rate_by_distance_bin.csv
+    `-- classification reports
 ```
+
+The Python script can also generate visualization files under `figures/` after the raw data is placed locally and the pipeline is run.
 
 ## How to Run
 
